@@ -1,0 +1,76 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* ^ first solution */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+.box{
+    background-color: brown;
+    width: 300px;
+    height: 300px;
+}
+
+/*  ^ second solution */
+
+/* .box{
+    background-color: brown;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+/* ^ third solution */
+/* body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+} */
+
+/* ^ four solution */
+/* .container {
+    text-align: center;
+}
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: calc(50vh - 100px); 
+} */
+/* ^ five solution */
+/* .container {
+    text-align: center;
+    height: 100vh;
+}
+.box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+}
+.container:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+} */
